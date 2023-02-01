@@ -1,7 +1,7 @@
 import random
 #function random to coverte the text file to requirements 
 # l33t code rules
-# - Words ending with (suffix) "-er" ends with "-xor" or "-zor" [ hacker -> h4x0r) 
+# Words ending with (suffix) "-er" ends with "-xor" or "-zor" [ hacker -> h4x0r) 
 
 def l33t_code_rule(s):
     s = s.replace("o", "0").replace("O", "0") #Replace o or O with 0(number) and a or A with 4
