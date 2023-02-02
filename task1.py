@@ -1,15 +1,20 @@
 import random
-#function random to coverte the text file to requirements 
+
+# This function will help in coverting the text file to requirements 
+
 # l33t code rules
-# Words ending with (suffix) "-er" ends with "-xor" or "-zor" [ hacker -> h4x0r) 
+
+# - Replace o or O with 0(number) and a or A with 4
+# - Replace e or E with 3 and i or I with 1
+# - Words ending with (suffix) "-er" ends with "-xor" or "-zor" [ hacker -> h4x0r) 
 
 def l33t_code_rule(s):
-    s = s.replace("o", "0").replace("O", "0") #Replace o or O with 0(number) and a or A with 4
+    s = s.replace("o", "0").replace("O", "0")
     s = s.replace("a", "4").replace("A", "4")
-    s = s.replace("e", "3").replace("E", "3") #Replace e or E with 3 and i or I with 1
+    s = s.replace("e", "3").replace("E", "3")
     s = s.replace("i", "1").replace("I", "1")
     if s.endswith("er"):
-        s = s[:-2] + random.choice(["xor", "zor"]) #Words ending with (suffix) "-er" ends with "-xor" or "-zor" [ hacker -> h4x0r) 
+        s = s[:-2] + random.choice(["xor", "zor"])
     return s
 
 # This function will help to copy target to new target file 
